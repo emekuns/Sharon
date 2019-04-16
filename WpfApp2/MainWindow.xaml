@@ -6,7 +6,25 @@
         xmlns:local="clr-namespace:WpfApp2"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+    <Grid Margin="0,0,-6.4,2">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <DataGrid x:Name="datagrid1" Grid.ColumnSpan="3" HorizontalAlignment="Left" Height="195" Margin="10,10,0,0" VerticalAlignment="Top" Width="774"/>
+        <Button x:Name="AddNewEmployeeBtn" Grid.ColumnSpan="3" Content="Add" HorizontalAlignment="Left" Margin="297,370,0,0" VerticalAlignment="Top" Width="120" Click="AddNewEmployeeBtn_Click" Height="22"/>
+        <TextBox x:Name="positionTxt" Grid.ColumnSpan="3" HorizontalAlignment="Left" Height="23" Margin="297,264,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="departmentTxt" Grid.ColumnSpan="3" HorizontalAlignment="Left" Height="23" Margin="297,292,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="nameTxt" Grid.ColumnSpan="3" HorizontalAlignment="Left" Height="23" Margin="297,236,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="payTxt" Grid.ColumnSpan="3" HorizontalAlignment="Left" Height="23" Margin="297,320,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Grid.ColumnSpan="3" Content="Name" HorizontalAlignment="Left" Margin="241,232,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.476,-0.729"/>
+        <Label Grid.ColumnSpan="3" Content="Position" HorizontalAlignment="Left" Margin="230,260,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.446,-0.225"/>
+        <Label Grid.ColumnSpan="3" Content="Department" HorizontalAlignment="Left" Margin="209,292,0,0" VerticalAlignment="Top"/>
+        <Label Grid.ColumnSpan="3" Content="Hourly Pay Rate" HorizontalAlignment="Left" Margin="188,316,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.173,0.648"/>
+        <TextBox x:Name="idTxt" Grid.ColumnSpan="3" HorizontalAlignment="Left" Height="23" Margin="297,210,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Grid.ColumnSpan="3" Content="Id" HorizontalAlignment="Left" Margin="262,210,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="clearBtn" Grid.ColumnSpan="3" Content="Clear" HorizontalAlignment="Left" Margin="459,373,0,0" VerticalAlignment="Top" Width="75" Click="ClearBtn_Click"/>
+
     </Grid>
 </Window>
